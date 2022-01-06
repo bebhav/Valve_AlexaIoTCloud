@@ -4,6 +4,12 @@
 #include <Arduino_ConnectionHandler.h>
 #include "arduino_secrets.h"
 
+#ifndef SECRET_DEVICE_KEY
+	#define SECRET_DEVICE_KEY	  "YOUR KEY"
+	const char THING_ID[]           = "YOUR ID";
+	const char DEVICE_LOGIN_NAME[]  = "YOUR LogIN";
+#endif
+
 const char DEVICE_KEY[]   = SECRET_DEVICE_KEY;    // Secret device password
 
 void onOnValve1Change();
